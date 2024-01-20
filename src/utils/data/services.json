@@ -1,0 +1,26 @@
+[
+    {
+        "id": "service-1",
+        "name": "service name",
+        "icon": "Layers",
+        "description": "Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi"
+    },
+    {
+        "id": "service-2",
+        "name": "service name",
+        "icon": "Dribble",
+        "description": "Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi"
+    },
+    {
+        "id": "service-3",
+        "name": "service name",
+        "icon": "FileEarmarkBarGraph",
+        "description": "Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi"
+    },
+    {
+        "id": "service-4",
+        "name": "Data 3",
+        "icon": "Speedometer2",
+        "description": "Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi"
+    }
+]

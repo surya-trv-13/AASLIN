@@ -1,0 +1,29 @@
+[
+    {
+        "id": "ATPL022",
+        "name": "DVVS Raju",
+        "designation": "Managing Director",
+        "pic": "team-1.jpg",
+        "desc": "Managing Director of AASLIN Office",
+        "socialLink": {
+            "twitter": "",
+            "facebook":"www.facebook.com",
+            "linkedin": "www.linkedin.com",
+            "instagram": "www.instagram.com"
+        }
+    },
+    {
+        "id": "ATPL011",
+        "name": "Murali Krishna Paidi",
+        "designation": "IT Manager",
+        "pic": "team-3.jpg",
+        "desc": "Leads developer, QA and support team",
+        "socialLink": {
+            "twitter": "www.twitter.com",
+            "facebook":"www.facebook.com",
+            "linkedin": "www.linkedin.com",
+            "instagram": "www.instagram.com"
+        }
+    }
+    
+]

@@ -1,0 +1,26 @@
+.why-us .content {
+	padding: 60px 100px 0 100px;
+}
+
+.why-us .content h3 {
+	font-weight: 400;
+	font-size: 34px;
+	color: #4fc4f7;
+}
+
+.why-us .content h4 {
+	font-size: 20px;
+	font-weight: 700;
+	margin-top: 5px;
+}
+
+.why-us .content p {
+	font-size: 15px;
+	color: #848484;
+}
+
+.why-us .img {
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
