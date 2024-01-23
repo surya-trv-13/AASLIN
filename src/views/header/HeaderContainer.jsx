@@ -1,7 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 import NavbarHeader from "../../components/headerComponent/NavbarHeader";
 import "./header.css";
-import { useUiSelector } from "./../../selectors/uiSelector";
 
 const HeaderContainer = () => {
 	return (
