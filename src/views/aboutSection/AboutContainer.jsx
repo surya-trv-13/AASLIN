@@ -1,15 +1,23 @@
 import React from "react";
-import { Container } from "react-bootstrap";
-import SectionTitleComponent from "../../components/utilComponent/sectionTitle/SectionTitleComponent";
+import { Col, Container, Row } from "react-bootstrap";
 import AboutComponent from "../../components/aboutComponent/AboutComponent";
+import CurvedTopDesign from "../../components/aboutComponent/CurvedTopDesign";
 import "./aboutSection.css";
+import AboutDetails from "../../components/aboutComponent/AboutDetails";
 
 const AboutContainer = () => {
 	return (
-		<section id="about" className="about">
-			<Container data-aos="fade-up">
-				<SectionTitleComponent title="About" />
-				<AboutComponent />
+		<section id="about" className="about position-relative">
+			<CurvedTopDesign />
+			<Container data-aos="fade-up" className="negative-marginTop">
+				<Row>
+					<Col lg={7}>
+						<AboutDetails />
+					</Col>
+					<Col lg={5} className="content pt-4 pt-lg-0">
+						<AboutComponent />
+					</Col>
+				</Row>
 			</Container>
 		</section>
 	);

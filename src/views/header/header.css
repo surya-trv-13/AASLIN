@@ -1,11 +1,20 @@
 #header {
-    transition: all 0.5s;
-    z-index: 997;
-    padding: 15px 0;
-  }
-  
-  #header.header-scrolled,
-  #header.header-inner-pages {
-    background: rgba(40, 58, 90, 0.9);
-  }
-  
+	transition: all 0.5s;
+	z-index: 997;
+	padding: 15px 0;
+}
+
+#header.header-scrolled,
+#header.header-inner-pages {
+	background: rgba(40, 58, 90, 0.9);
+}
+
+.stickyScroll {
+	transition: all 0.5s;
+	background-color: #4fc4f7a6;
+}
+
+.loadScreen {
+	transition: all 0.5s;
+	background-color: transparent;
+}

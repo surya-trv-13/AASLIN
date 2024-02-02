@@ -6,6 +6,7 @@
 
 #hero .container {
 	padding-top: 72px;
+	z-index: 3;
 }
 
 #hero h1 {

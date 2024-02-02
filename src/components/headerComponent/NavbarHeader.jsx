@@ -19,9 +19,10 @@ const NavbarHeader = () => {
 
 	return (
 		<Navbar
-			style={{ backgroundColor: scrollYVal > 100 ? "#4FC4F7A6" : "transparent" }}
+			// style={{ backgroundColor: scrollYVal > 100 ? "#4FC4F7A6" : "transparent" }}
 			fixed="top"
 			expand="lg"
+			className={scrollYVal > 100 ? "stickyScroll" : "loadScreen"}
 		>
 			<Container>
 				<Navbar.Brand href="#">
