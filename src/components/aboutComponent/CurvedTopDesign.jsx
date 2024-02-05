@@ -14,7 +14,7 @@ const CurvedTopDesign = () => {
 				stroke-opacity="null"
 				stroke-width="0"
 				stroke="#000"
-				fill="#fc7500"
+				fill="#280274"
 			/>
 			<path
 				id="svg_2"
@@ -22,7 +22,7 @@ const CurvedTopDesign = () => {
 				stroke-opacity="null"
 				stroke-width="0"
 				stroke="#000"
-				fill="#5daae0"
+				fill="#E9F6FF"
 			/>
 			<path
 				id="svg_3"

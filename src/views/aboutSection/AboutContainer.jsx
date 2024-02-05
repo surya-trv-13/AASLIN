@@ -2,8 +2,8 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import AboutComponent from "../../components/aboutComponent/AboutComponent";
 import CurvedTopDesign from "../../components/aboutComponent/CurvedTopDesign";
-import "./aboutSection.css";
 import AboutDetails from "../../components/aboutComponent/AboutDetails";
+import "./aboutSection.css";
 
 const AboutContainer = () => {
 	return (
