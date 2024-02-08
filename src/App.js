@@ -9,6 +9,7 @@ import ContactSection from "./views/contactSection";
 import { useUiSelector } from "./selectors/uiSelector";
 import "./App.css";
 import ServiceSection from "./views/serviceSection";
+import JobSection from "./views/jobsSection";
 
 const App = () => {
 	const { scrollYActionCall } = useUiSelector();
@@ -34,12 +35,14 @@ const App = () => {
 	return (
 		<div className="App">
 			<Header />
-			<HeroSection />
+			{/* <HeroSection />
 			<AboutSection />
 			<WhyUsSection />
 			<ServiceSection />
 			<TeamSection />
 			<ContactSection />
+			 */}
+			<JobSection />
 		</div>
 	);
 };

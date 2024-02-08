@@ -1,0 +1,70 @@
+.job {
+	height: 90vh;
+	bottom: 0;
+	position: absolute;
+	overflow-x: hidden;
+	width: 100%;
+}
+
+.row-job {
+	width: 80vw;
+	margin: auto !important;
+}
+
+.list-box {
+	padding: 5px 0px 4px 20px;
+	border-radius: 45px 0 0 45px;
+	background-color: #e9f6ff;
+	margin-bottom: 10px;
+	cursor: pointer;
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+
+.list-box h3 {
+	font-size: 1.3rem;
+	color: #280274;
+}
+
+.list-box h4 {
+	font-size: 0.9rem;
+	color: #292929;
+}
+
+.list-box .desg-box {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.desg-box p {
+	font-size: 0.7rem;
+	text-align: center;
+	margin: 0.5rem;
+}
+
+.job-details {
+	height: 86vh;
+	border: 1px solid #333333;
+	margin-bottom: 20px;
+	padding: 20px;
+	overflow: auto;
+	overflow-x: hidden;
+}
+
+.job-details h2 {
+	font-size: 2rem;
+	font-weight: bolder;
+	color: #373a3b;
+}
+
+.job-details .job-action h4 {
+	font-size: 1.3rem;
+	font-weight: 400;
+	color: #aaa;
+}
+
+.job-details .job-action p {
+	font-size: 0.9rem;
+	font-weight: 400;
+	color: #020020;
+}

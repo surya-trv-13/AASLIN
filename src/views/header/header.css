@@ -12,9 +12,11 @@
 .stickyScroll {
 	transition: all 0.5s;
 	background-color: #3652ad;
+	/* height: 10vh; */
 }
 
 .loadScreen {
 	transition: all 0.5s;
 	background-color: transparent;
+	/* height: 10vh; */
 }

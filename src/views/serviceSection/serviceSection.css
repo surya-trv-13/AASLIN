@@ -39,3 +39,9 @@
 .services .icon-box:hover h4 a {
 	color: #47b2e4;
 }
+
+.custom-section-curved-top-4 {
+	top: -260px;
+	position: absolute;
+	left: 0;
+}

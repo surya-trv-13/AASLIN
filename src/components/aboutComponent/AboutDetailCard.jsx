@@ -1,5 +1,5 @@
 import React from "react";
-import Focus2LineIcon from "remixicon-react/Focus2LineIcon";
+import Focus2LineIcon from "remixicon-react/CheckDoubleLineIcon";
 
 const AboutDetailCard = () => {
 	return (

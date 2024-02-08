@@ -31,3 +31,8 @@
 	left: 0;
 	z-index: -3;
 }
+
+.custom-container {
+	position: relative;
+	z-index: 3;
+}

@@ -7,7 +7,7 @@ import WhyUsIllustration from "../../components/whyUsComponent/WhyUsIllustration
 const WhyUsContainer = () => {
 	return (
 		<section id="why-us" className="section-bg why-us position-relative">
-			<svg
+			{/* <svg
 				class="custom-section-curved-top-2"
 				width="100%"
 				height="298"
@@ -20,8 +20,8 @@ const WhyUsContainer = () => {
 					stroke="#000"
 					fill="#e9f6ff"
 				/>
-			</svg>
-			<Container className="container-fluid" data-aos="fade-up">
+			</svg> */}
+			<Container className="container-fluid custom-container" data-aos="fade-up">
 				<Row>
 					<WhyComponent />
 					<WhyUsIllustration />

@@ -1,1 +1,2 @@
 export const SCROLL_Y_ACTION = "SCROLL_Y_ACTION";
+export const JOB_SWITCH_ACTION = "JOB_SWITCH_ACTION";
