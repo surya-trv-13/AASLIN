@@ -1,12 +1,14 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import JobsLists from "../../components/jobsComponent/JobsLists";
-import "./jobSection.css";
 import JobDetails from "../../components/jobsComponent/JobDetails";
+import CurvedBackDesign from "../../components/jobsComponent/CurvedBackDesign";
+import "./jobSection.css";
 
 const JobContainer = () => {
 	return (
 		<div className="job">
+			<CurvedBackDesign />
 			<Row className="row-job">
 				<Col lg={5} md={12} sm={12}>
 					<JobsLists />

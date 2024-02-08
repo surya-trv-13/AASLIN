@@ -1,19 +1,31 @@
 import React from "react";
+import { useUiSelector } from "../../selectors/uiSelector";
+import PropTypes from "prop-types";
 
-const JobListDetails = ({ designation, days, location }) => {
+const propTypes = {
+	jobData: PropTypes.object,
+};
+
+const JobListDetails = ({ jobData }) => {
+	const { jobSwitchActionCall } = useUiSelector();
 	const handleClick = () => {
-		console.log(designation);
+		console.log(jobData?.id);
+		jobSwitchActionCall(jobData?.id);
 	};
 
 	return (
 		<div className="list-box" onClick={handleClick}>
 			<div className="desg-box">
-				<h3>{designation}</h3>
-				<p>{days} days ago</p>
+				<h3>{jobData?.designation}</h3>
+				<p>
+					{Math.floor((new Date() - new Date(jobData?.dateOfPost)) / (24 * 60 * 60 * 1000))} days
+					ago
+				</p>
 			</div>
-			<h4>{location}</h4>
+			<h4>{jobData?.location}</h4>
 		</div>
 	);
 };
 
+JobListDetails.propTypes = propTypes;
 export default JobListDetails;

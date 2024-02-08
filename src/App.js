@@ -34,7 +34,7 @@ const App = () => {
 
 	return (
 		<div className="App">
-			<Header />
+			<Header showRightComponent={false} />
 			{/* <HeroSection />
 			<AboutSection />
 			<WhyUsSection />

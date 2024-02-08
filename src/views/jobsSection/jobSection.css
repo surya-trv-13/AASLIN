@@ -41,6 +41,12 @@
 	text-align: center;
 	margin: 0.5rem;
 }
+.job-list {
+	height: 86vh;
+	margin-bottom: 20px;
+	overflow: auto;
+	overflow-x: hidden;
+}
 
 .job-details {
 	height: 86vh;
@@ -49,6 +55,7 @@
 	padding: 20px;
 	overflow: auto;
 	overflow-x: hidden;
+	background-color: #ffffff;
 }
 
 .job-details h2 {
@@ -67,4 +74,11 @@
 	font-size: 0.9rem;
 	font-weight: 400;
 	color: #020020;
+}
+.skill-badge {
+	margin-left: 3px;
+}
+.job-curved {
+	position: absolute;
+	z-index: -2;
 }

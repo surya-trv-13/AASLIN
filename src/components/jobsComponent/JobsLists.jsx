@@ -4,13 +4,9 @@ import jobDetails from "../../utils/data/jobs.json";
 
 const JobsLists = () => {
 	return (
-		<div>
+		<div className="job-list">
 			{jobDetails.map((jobDetail) => (
-				<JobListDetails
-					designation={jobDetail.designation}
-					days={Math.floor((new Date() - new Date(jobDetail.dateOfPost)) / (24 * 60 * 60 * 1000))}
-					location={jobDetail.location}
-				/>
+				<JobListDetails key={jobDetail.id} jobData={jobDetail} />
 			))}
 		</div>
 	);
