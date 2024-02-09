@@ -9,7 +9,6 @@ const propTypes = {
 const JobListDetails = ({ jobData }) => {
 	const { jobSwitchActionCall } = useUiSelector();
 	const handleClick = () => {
-		console.log(jobData?.id);
 		jobSwitchActionCall(jobData?.id);
 	};
 

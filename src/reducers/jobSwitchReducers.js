@@ -7,7 +7,7 @@ const initialState = {
 };
 
 const jobSwitchReducers = createReducer(initialState, (builder) => {
-	builder.addCase(jobSwitchAction, (state, action) => ({
+	builder.addCase(jobSwitchAction, (_state, action) => ({
 		data: jobsData.filter((job) => job.id === action.payload)[0],
 	}));
 });

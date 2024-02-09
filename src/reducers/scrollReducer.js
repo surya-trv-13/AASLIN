@@ -6,7 +6,7 @@ const initialState = {
 };
 
 const scrollReducer = createReducer(initialState, (builder) => {
-	builder.addCase(scrollYAction, (state, action) => ({ scrollY: action.payload }));
+	builder.addCase(scrollYAction, (_state, action) => ({ scrollY: action.payload }));
 });
 
 export default scrollReducer;

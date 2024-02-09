@@ -28,7 +28,6 @@ const NavbarHeader = ({ showRightComponent }) => {
 				<Navbar.Brand href="#">
 					<HeaderLogo textColor={scrollYVal > 100 ? "#FFFFFF" : "#CCCCCC"} />
 				</Navbar.Brand>
-				{console.log(showRightComponent)}
 				{showRightComponent && (
 					<>
 						<Navbar.Toggle aria-controls="nav-responsive" />
