@@ -1,15 +1,11 @@
 import { useEffect } from "react";
 import Aos from "aos";
-import Header from "./views/header";
-import HeroSection from "./views/heroSection";
-import AboutSection from "./views/aboutSection";
-import WhyUsSection from "./views/whyUsSection";
-import TeamSection from "./views/teamsSection";
-import ContactSection from "./views/contactSection";
+
 import { useUiSelector } from "./selectors/uiSelector";
 import "./App.css";
-import ServiceSection from "./views/serviceSection";
-import JobSection from "./views/jobsSection";
+import JobPages from "./views/jobPages";
+import Home from "./views/home";
+import { Route, Routes } from "react-router-dom";
 
 const App = () => {
 	const { scrollYActionCall } = useUiSelector();
@@ -34,15 +30,10 @@ const App = () => {
 
 	return (
 		<div className="App">
-			<Header showRightComponent={false} />
-			{/* <HeroSection />
-			<AboutSection />
-			<WhyUsSection />
-			<ServiceSection />
-			<TeamSection />
-			<ContactSection />
-			 */}
-			<JobSection />
+			<Routes>
+				<Route exact path="/" element={<Home />}></Route>
+				<Route exact path="/jobs" element={<JobPages />}></Route>
+			</Routes>
 		</div>
 	);
 };

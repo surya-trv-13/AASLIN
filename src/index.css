@@ -1,3 +1,12 @@
+:root {
+	--primary-color: #fe7a36;
+	--secondary-color: #3652ad;
+	--tertiary-color: #280274;
+	--light-color: #e9f6ff;
+	--primary-light: #f09240;
+	--gray-background: #cccccc;
+}
+
 body {
 	margin: 0;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
@@ -27,16 +36,16 @@ a:hover {
 
 /* Track */
 ::-webkit-scrollbar-track {
-	background: #cccccc;
+	background: var(--gray-background);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-	background: #fe7a36;
+	background: var(--primary-color);
 	border-radius: 5px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-	background: #f09240;
+	background: var(--primary-light);
 }

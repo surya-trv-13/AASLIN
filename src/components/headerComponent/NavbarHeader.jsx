@@ -3,6 +3,7 @@ import { Container, Nav, Navbar } from "react-bootstrap";
 import HeaderLogo from "./HeaderLogo";
 import { useUiSelector } from "../../selectors/uiSelector";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 const propTypes = {
 	showRightComponent: PropTypes.bool.isRequired,
@@ -36,6 +37,7 @@ const NavbarHeader = ({ showRightComponent }) => {
 								<Nav.Link onClick={() => scrollToTopSection("hero")}>Home</Nav.Link>
 								<Nav.Link onClick={() => scrollToTopSection("about")}>About</Nav.Link>
 								<Nav.Link onClick={() => scrollToTopSection("team")}>Teams</Nav.Link>
+								<Link to="/Jobs">Career</Link>
 								<Nav.Link onClick={() => scrollToTopSection("contact")}>Contact Us</Nav.Link>
 							</Nav>
 						</Navbar.Collapse>

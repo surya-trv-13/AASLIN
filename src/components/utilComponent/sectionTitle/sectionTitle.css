@@ -10,7 +10,7 @@
 	margin-bottom: 20px;
 	padding-bottom: 20px;
 	position: relative;
-	color: #fe7a36;
+	color: var(--primary-color);
 }
 
 .section-title h2::before {
@@ -37,4 +37,10 @@
 
 .section-title p {
 	margin-bottom: 0;
+}
+
+@media screen and (max-width: 480px) {
+	.section-title {
+		padding-bottom: 0;
+	}
 }

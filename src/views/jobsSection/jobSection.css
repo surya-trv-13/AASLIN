@@ -9,6 +9,9 @@
 .row-job {
 	width: 80vw;
 	margin: auto !important;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .list-box {
@@ -42,14 +45,24 @@
 	margin: 0.5rem;
 }
 .job-list {
-	height: 86vh;
+	height: 76vh;
 	margin-bottom: 20px;
 	overflow: auto;
 	overflow-x: hidden;
+	width: 41%;
+}
+
+.job-page-header {
+	width: 80vw;
+	margin: auto !important;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .job-details {
-	height: 86vh;
+	height: 76vh;
+	width: 58%;
 	border: 1px solid #333333;
 	margin-bottom: 20px;
 	padding: 20px;
@@ -68,6 +81,10 @@
 	font-size: 1.3rem;
 	font-weight: 400;
 	color: #aaa;
+}
+
+.job-details .job-details-header .close-details {
+	display: none;
 }
 
 .job-details .job-action p {
@@ -89,4 +106,41 @@
 .apply-btn {
 	display: flex !important;
 	align-items: center !important;
+}
+
+@media screen and (max-width: 700px) {
+	.job-details {
+		display: none;
+	}
+
+	.row-job {
+		width: 100%;
+	}
+
+	.list-box {
+		border-radius: 7px;
+	}
+
+	.job-list {
+		padding: 0 5px;
+		width: 100%;
+		height: 75vh;
+	}
+
+	.job-details.active {
+		position: fixed;
+		display: block;
+		width: 100%;
+		z-index: 100;
+		height: 90vh;
+	}
+
+	.job-details .job-details-header .close-details {
+		display: block;
+	}
+
+	.row > * {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
 }

@@ -1,28 +1,40 @@
 import React, { useState } from "react";
 import { Button, FloatingLabel, Form, Modal } from "react-bootstrap";
 import PropTypes from "prop-types";
+import { useUiSelector } from "../../selectors/uiSelector";
 
 const propTypes = {
 	jobTitle: PropTypes.string.isRequired,
 };
 
 const ApplyDialog = ({ jobTitle }) => {
-	const [showWin, setShowWin] = useState(true);
+	const { isOpenApplyWindow, openApplyWindow } = useUiSelector();
+
+	const handleCloseWindow = () => {
+		openApplyWindow(false);
+	};
 
 	return (
-		<Modal size="lg" centered show={showWin} onHide={() => setShowWin(false)}>
-			<Modal.Header closeButton>Apply for {jobTitle}</Modal.Header>
+		<Modal size="lg" centered show={isOpenApplyWindow} onHide={handleCloseWindow}>
+			<Modal.Header closeButton>
+				<h3>
+					Apply for <b>{jobTitle}</b>
+				</h3>
+			</Modal.Header>
 			<Modal.Body>
 				<Form>
 					<Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-						<FloatingLabel controlId="floatingInput" label="Name" className="mb-3">
-							<Form.Control type="name" placeholder="firstname lastname" />
-						</FloatingLabel>
+						<Form.Label>Name</Form.Label>
+						<Form.Control type="name" placeholder="firstname lastname" />
 					</Form.Group>
 					<Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-						<FloatingLabel controlId="floatingInput" label="Email address" className="mb-3">
-							<Form.Control type="email" placeholder="name@example.com" />
-						</FloatingLabel>
+						<Form.Label>Email</Form.Label>
+						<Form.Control type="email" placeholder="name@example.com" />
+					</Form.Group>
+					<Form.Group></Form.Group>
+					<Form.Group controlId="formFile" className="mb-3">
+						<Form.Label>Resume</Form.Label>
+						<Form.Control type="file" />
 					</Form.Group>
 				</Form>
 			</Modal.Body>
